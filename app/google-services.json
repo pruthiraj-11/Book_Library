@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466700944524",
+    "project_id": "library-2a42b",
+    "storage_bucket": "library-2a42b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466700944524:android:2fcf8e53b199eebbdae7a9",
+        "android_client_info": {
+          "package_name": "com.bunty.library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466700944524-q2165djjeu0dckgun51ulpshl1ccu8rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVHWD_mo2JDWgzbGZ0Lxm-vlNk5O1Vsvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466700944524-q2165djjeu0dckgun51ulpshl1ccu8rq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
