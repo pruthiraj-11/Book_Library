@@ -7,14 +7,14 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_borrowed"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_borrowed" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_favourites"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_favourites" />
 
     <item
         android:id="@+id/navigation_profile"
