@@ -1,6 +1,8 @@
 package com.bunty.library;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -9,7 +11,6 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.bunty.library.databinding.ActivityMainBinding;
-import com.bunty.library.ui.search.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Objects;
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
-        binding.fab.setOnClickListener(v -> getSupportFragmentManager().beginTransaction().add(R.id.nav_host_fragment_activity_main, SearchFragment.class,null).commit());
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                getSupportFragmentManager().beginTransaction().add(R.id.nav_host_fragment_activity_main, SearchFragment.class,null).commitNowAllowingStateLoss();
+                Intent intent=new Intent(getApplicationContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
